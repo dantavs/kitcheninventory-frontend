@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    color: rgb(227, 220, 228);
+    margin: 0;
+    padding: 0;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(157, 119, 168);
+    color: rgb(227, 220, 228);
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container :hover{
+    background-color: rgb(88, 66, 94);
+    cursor: pointer;
+}
+
+.productCard strong {
+    font-size: 2rem;
+    padding: 0 3rem ;
+}
+
+
+.productDelete {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgb(157, 119, 168);
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    height: 30px;
+    width: 30px;
+    display: initial;
+    color: rgb(227, 220, 228);
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.category {
+    font-style: italic;
+}

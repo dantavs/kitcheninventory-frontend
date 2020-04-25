@@ -1,0 +1,30 @@
+.products-container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.products-header input{
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+}
+
+.products-header input {
+    padding-left: 8px;
+}
+
+.products-header .button, input{
+    width: 300px;
+}
+
+.products-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
