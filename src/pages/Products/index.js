@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import {Link, useHistory} from 'react-router-dom'
-import { FiTrash2, FiDollarSign } from 'react-icons/fi'
+import {Link} from 'react-router-dom'
 
 import './styles.css'
 import api from '../../services/api'
@@ -9,7 +8,6 @@ import ProductList from '../../components/productList'
 
 
 export default function Products() {
-    const history = useHistory()
 
     const [products, setProducts] = useState([])
     const [search, setSearch] = useState([])
