@@ -6,14 +6,6 @@ import api from '../../services/api'
 
 import './styles.css'
 
-function handleDelete(){
-    alert('Delete')
-}
-
-function handleDetail(){
-    alert('Detail')
-}
-
 export default function ProductCard(data) {
     const product = data.product
     const history = useHistory()

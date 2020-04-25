@@ -12,6 +12,8 @@ export default function Products() {
     const [products, setProducts] = useState([])
     const [search, setSearch] = useState([])
 
+    console.log("api : ", process.env.REACT_APP_API_URL)
+
     useEffect(() =>{
         api.get('products').then(response => {
             setProducts(response.data)
