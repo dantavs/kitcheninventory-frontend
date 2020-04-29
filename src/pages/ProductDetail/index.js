@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
-
 import { Link, useParams, useHistory } from 'react-router-dom'
 
+import {FiArrowLeft} from 'react-icons/fi'
 
 import './styles.css'
 import api from '../../services/api'
+
+import logoImg from '../../assets/logo.png'
 
 export default function ProductDetail() {
     const history = useHistory()
@@ -61,8 +63,10 @@ export default function ProductDetail() {
     return (
         <div className="productDetailContainer">
             <header>
-                <h2>Product Detail</h2>
-                <Link to="/">back</Link>
+                <center>
+                    <img src={logoImg} alt='Kitchen Inventory' />
+                    <h2>Product Detail</h2>
+                </center>
             </header>
 
             <form onSubmit={handleUpdateProduct} className="addProduct">
@@ -104,6 +108,7 @@ export default function ProductDetail() {
                 </select>
                 <button className='button'>Update Product</button>
             </form>
+            <p className='backLink'><Link className='backLink' to="/"><FiArrowLeft />back</Link></p>
         </div>
     )
 }

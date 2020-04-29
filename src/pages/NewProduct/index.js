@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
+import { FiArrowLeft } from 'react-icons/fi'
 
 import './styles.css'
 import api from '../../services/api'
+
+import logoImg from '../../assets/logo.png'
 
 export default function NewProduct() {
     const history = useHistory()
@@ -44,8 +47,10 @@ export default function NewProduct() {
     return (
         <div className='containerNewProduct'>
             <div className="headerNewProduct">
-                <h2>New Product</h2>
-                <Link to='/'>voltar</Link>
+                <center>
+                    <img src={logoImg} alt='Kitchen Inventory' />
+                    <h2>New Product</h2>
+                </center>
             </div>
 
             <form onSubmit={handleAddProduct} className="addProduct">
@@ -86,6 +91,7 @@ export default function NewProduct() {
                 </select>
                 <button className='button'>Add Product</button>
             </form>
+            <p className='backLink'><Link className='backLink' to='/'><FiArrowLeft />back</Link></p>
         </div>
     )
 }

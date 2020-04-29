@@ -5,6 +5,7 @@ import './styles.css'
 import api from '../../services/api'
 
 import ProductList from '../../components/productList'
+import logoImg from '../../assets/logo.png'
 
 
 export default function Products() {
@@ -28,6 +29,7 @@ export default function Products() {
 
     return (
         <div className='products-container'>
+            <img src={logoImg} alt="Kitchen Inventory" />
             <h2>Products List</h2>
 
             <div className="products-header">

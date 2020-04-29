@@ -1,10 +1,12 @@
 .productDetailContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 0.5rem;
     justify-content: center;
-    align-items: center;
     margin: 2rem auto;
     max-width: 1180px;;
     min-height: 100vh;
 }
+
+
+.addProduct {
+    margin-top: 2rem;
+}
+
